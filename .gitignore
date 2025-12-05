@@ -1,14 +1,47 @@
-# Compiler files
-cache/
-out/
+# -----------------------------
+# Foundry / Solidity build files
+# -----------------------------
+out/             # Compiled contracts (ABI + bytecode)
+cache/           # Forge cache and intermediate build files
 
-# Ignores development broadcast logs
-!/broadcast
-/broadcast/*/31337/
-/broadcast/**/dry-run/
+# -----------------------------
+# Local blockchain / Anvil
+# -----------------------------
+anvil.db         # Anvil local chain database
+*.db             # Any other database files
 
-# Docs
-docs/
+# -----------------------------
+# Dependencies / Libraries
+# -----------------------------
+lib/             # Dependencies installed via `forge install`
 
-# Dotenv file
-.env
+# -----------------------------
+# Node / JavaScript (if used)
+# -----------------------------
+node_modules/
+package-lock.json
+yarn.lock
+
+# -----------------------------
+# Editor / IDE files
+# -----------------------------
+.vscode/
+*.code-workspace
+.idea/
+
+# -----------------------------
+# Secrets / environment
+# -----------------------------
+.env             # Private keys, RPC URLs, API keys
+*.env
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# OS specific
+# -----------------------------
+.DS_Store
+Thumbs.db
