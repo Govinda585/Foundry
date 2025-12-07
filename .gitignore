@@ -45,3 +45,5 @@ yarn.lock
 # -----------------------------
 .DS_Store
 Thumbs.db
+/lib
+lib/
